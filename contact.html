@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact - Code__A</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="contact-page">
+
+<!-- LOGO -->
+<a href="index.html" class="logo-link">
+  <img src="img/Logo2.png" alt="Code__A Logo" class="corner-logo">
+</a>
+
+<!-- MENU ICON -->
+<div class="menu-icon">☰</div>
+
+<!-- MENU -->
+<nav id="menu">
+  <a href="home.html">Home</a>
+  <a href="about.html">About me</a>
+  <a href="projects.html">Projects</a>
+  <a href="skills.html">Skills</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="home-hero">
+  <div class="hero-content">
+
+    <p class="small-title">
+      CONTACT
+    </p>
+
+    <h1 class="hero-title">
+      Let's Connect
+    </h1>
+
+    <p class="hero-text">
+      Feel free to contact me for networking, collaboration or opportunities in IT and software development.
+    </p>
+
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="contact-wrapper">
+
+  <form
+    action="https://formspree.io/f/mvzloazg"
+    method="POST"
+    data-netlify="false"
+    class="contact-form"
+  >
+
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      required
+    >
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      required
+    >
+
+    <textarea
+      name="message"
+      placeholder="Your Message"
+      rows="7"
+      required
+    ></textarea>
+
+    <button type="submit">
+      Send Message
+    </button>
+
+  </form>
+<div id="success-popup">
+  <div class="popup-box">
+
+    <h2>Message Sent</h2>
+
+    <p>
+      Your message has been sent successfully.
+    </p>
+
+    <button type="button" id="close-popup">
+      Close
+    </button>
+
+  </div>
+</div>
+</section>
+
+</main>
+
+<footer class="footer">
+  📍 Zurich, Switzerland •
+
+  <a href="mailto:asticarras@gmail.com">
+    asticarras@gmail.com
+  </a>
+
+  <p class="copyright">© 2026 Code__A</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const icon = document.querySelector(".menu-icon");
+  const menu = document.getElementById("menu");
+  const links = document.querySelectorAll("#menu a");
+
+  icon.addEventListener("click", function() {
+    menu.classList.toggle("active");
+  });
+
+  links.forEach(link => {
+    link.addEventListener("click", function() {
+      menu.classList.remove("active");
+    });
+  });
+
+  // CONTACT FORM
+  const form = document.querySelector(".contact-form");
+  const popup = document.getElementById("success-popup");
+const closePopup = document.getElementById("close-popup");
+
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      popup.style.display = "flex";
+      form.reset();
+    }
+  });
+closePopup.addEventListener("click", function() {
+  popup.style.display = "none";
+});
+});
+</script>
+
+</body>
+</html>

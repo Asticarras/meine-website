@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Skills - Code__A</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="skills-page">
+
+<!-- LOGO -->
+<a href="index.html" class="logo-link">
+  <img src="img/Logo2.png" alt="Code__A Logo" class="corner-logo">
+</a>
+
+<!-- MENU ICON -->
+<div class="menu-icon">☰</div>
+
+<!-- MENU -->
+<nav id="menu">
+  <a href="home.html">Home</a>
+  <a href="about.html">About me</a>
+  <a href="projects.html">Projects</a>
+  <a href="skills.html">Skills</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="home-hero">
+  <div class="hero-content">
+
+    <p class="small-title">
+      SKILLS
+    </p>
+
+    <h1 class="hero-title">
+      Technologies & Learning
+    </h1>
+
+    <p class="hero-text">
+      Skills and technologies I am currently learning and improving step by step.
+    </p>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="overview-grid">
+
+  <div class="overview-card">
+    <h2>Frontend Development</h2>
+
+    <p>
+      HTML, CSS and basic JavaScript for creating modern and responsive websites.
+    </p>
+  </div>
+
+  <div class="overview-card">
+    <h2>Tools & Platforms</h2>
+
+    <p>
+      Visual Studio Code, GitHub basics and Cisco learning platforms.
+    </p>
+  </div>
+
+  <div class="overview-card">
+    <h2>Cloud & IT</h2>
+
+    <p>
+      Currently learning Microsoft Azure and preparing to continue developing my cloud and IT knowledge.
+    </p>
+  </div>
+
+  <div class="overview-card">
+    <h2>Soft Skills</h2>
+
+    <p>
+      Communicative, professional, respectful and motivated to continuously improve and grow in the IT field.
+    </p>
+  </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+  📍 Zurich, Switzerland •
+
+  <a href="mailto:asticarras@gmail.com">
+    asticarras@gmail.com
+  </a>
+
+  <p class="copyright">© 2026 Code__A</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const icon = document.querySelector(".menu-icon");
+  const menu = document.getElementById("menu");
+  const links = document.querySelectorAll("#menu a");
+
+  icon.addEventListener("click", function() {
+    menu.classList.toggle("active");
+  });
+
+  links.forEach(link => {
+    link.addEventListener("click", function() {
+      menu.classList.remove("active");
+    });
+  });
+
+});
+</script>
+
+</body>
+</html>

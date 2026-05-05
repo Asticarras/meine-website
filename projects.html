@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Code__A</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="projects-page">
+<a href="index.html" class="logo-link">
+  <img src="img/Logo2.png" alt="Code__A Logo" class="corner-logo">
+</a>
+<!-- MENU ICON -->
+<div class="menu-icon">☰</div>
+
+<!-- MENU -->
+<nav id="menu">
+  <a href="home.html">Home</a>
+  <a href="about.html">About me</a>
+  <a href="projects.html">Projects</a>
+  <a href="skills.html">Skills</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="home-hero">
+  <div class="hero-content">
+
+    <p class="small-title">
+      MY WORK
+    </p>
+
+    <h1 class="hero-title">
+      Projects & Practice
+    </h1>
+
+    <p class="hero-text">
+      Here are some projects I built while learning web development and IT.
+    </p>
+
+  </div>
+</section>
+
+<!-- PROJECT GRID -->
+<section class="overview-grid">
+
+  <div class="overview-card">
+    <h2>Password Generator</h2>
+
+    <p>
+      A password generator created to practice JavaScript logic and user interaction.
+    </p>
+  </div>
+
+  <div class="overview-card">
+    <h2>Portfolio Website</h2>
+
+    <p>
+      My personal portfolio website built with HTML, CSS and modern UI design principles.
+    </p>
+  </div>
+
+  <div class="overview-card">
+    <h2>More Coming Soon</h2>
+
+    <p>
+      I am continuously learning and adding new projects as I improve my skills.
+    </p>
+  </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+  📍 Zurich, Switzerland •
+
+  <a href="mailto:asticarras@gmail.com">
+    asticarras@gmail.com
+  </a>
+
+  <p class="copyright">© 2026 Code__A</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const icon = document.querySelector(".menu-icon");
+  const menu = document.getElementById("menu");
+  const links = document.querySelectorAll("#menu a");
+
+  icon.addEventListener("click", function() {
+    menu.classList.toggle("active");
+  });
+
+  links.forEach(link => {
+    link.addEventListener("click", function() {
+      menu.classList.remove("active");
+    });
+  });
+});
+</script>
+
+</body>
+</html>
