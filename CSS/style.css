@@ -459,10 +459,10 @@ body.about-page header {
 .corner-logo {
   position: absolute;
 
-  top: 20px;
-  right: 35px;
+  top: 25px;
+  right: 25px;
 
-  width: 150px;
+  width: 120px;
   height: auto;
 
   z-index: 9999;
@@ -867,4 +867,74 @@ body.about-page header {
   font-size: 12px;
 
   color: #64748b;
+}
+/* =========================
+  RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+  .home-hero,
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-title,
+  .about-title {
+    font-size: 48px;
+  }
+
+  .hero-image img,
+  .about-image img {
+    max-width: 100%;
+  }
+
+  .corner-logo {
+    width: 110px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .home-hero {
+    padding: 120px 25px 60px;
+  }
+
+  .hero-title,
+  .about-title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .hero-text,
+  .about-text p {
+    font-size: 17px;
+  }
+
+  .menu-icon {
+    left: 20px;
+  }
+
+  .corner-logo {
+    width: 90px;
+    top: 15px;
+    right: 15px;
+  }
+
+  #menu {
+    width: 100%;
+    left: -100%;
+  }
+
+  #menu.active {
+    left: 0;
+  }
+
+  #menu::before {
+    left: -250px;
+    width: 500px;
+    height: 500px;
+  }
 }
