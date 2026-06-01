@@ -1,0 +1,34 @@
+# Query: corner-logo
+# ContextLines: 1
+
+8 results - 6 files
+
+about.html:
+  12    <a href="index.html" class="logo-link">
+  13:   <img src="img/Logo2.png" alt="Code__A Logo" class="corner-logo">
+  14  </a>
+
+contact.html:
+  15  <a href="index.html" class="logo-link">
+  16:   <img src="img/Logo2.png" alt="Code__A Logo" class="corner-logo">
+  17  </a>
+
+Home.html:
+  12  <a href="index.html" class="logo-link">
+  13:   <img src="img/Logo2.png" alt="Code__A Logo" class="corner-logo">
+  14  </a>
+
+projects.html:
+  12  <a href="index.html" class="logo-link">
+  13:   <img src="img/Logo2.png" alt="Code__A Logo" class="corner-logo">
+  14  </a>
+
+skills.html:
+  15  <a href="index.html" class="logo-link">
+  16:   <img src="img/Logo2.png" alt="Code__A Logo" class="corner-logo">
+  17  </a>
+
+CSS\style.css:
+  459  
+  460: .corner-logo {
+  461    width: 120px;
