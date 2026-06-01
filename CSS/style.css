@@ -1043,4 +1043,73 @@ body.about-page header {
 
 }
 
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  /* Hero */
+  .home-hero,
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+
+    gap: 30px;
+
+    padding: 120px 25px 60px;
+  }
+
+  .hero-title,
+  .about-title {
+    font-size: 42px;
+  }
+
+  .hero-text {
+    font-size: 18px;
+  }
+
+  /* Bilder */
+  .hero-image img,
+  .about-image img,
+  .project-main-image {
+    max-width: 100%;
+  }
+
+  /* Karten */
+  .overview-grid,
+  .projects-grid {
+    padding: 0 20px;
+  }
+
+  .overview-card {
+    padding: 25px;
+  }
+
+  /* Logo */
+  .corner-logo {
+    width: 100px;
+    right: 15px;
+    top: 15px;
+  }
+
+  /* Menü */
+  #menu {
+    width: 160px;
+  }
+
+  /* Titel */
+  .small-title {
+    font-size: 12px;
+  }
+
+  .hero-title {
+    line-height: 1.2;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+}
 
